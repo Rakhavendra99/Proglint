@@ -1,0 +1,45 @@
+<html>
+<body>
+<h2>Window object in JavaScript</h2>
+<br>
+<input type="button" value="Alert message" onclick = "msg()"></input><br><br>
+<input type="button" value="delete record" onclick = "remove()"></input><br><br>
+<input type="button" value="Input" onclick="input()"></input><br><br>
+<input type="button" value="My Blog" onclick="open()"></input><br><br>
+
+
+
+
+
+<script>
+function msg()
+{
+alert("Hello welcom");
+}
+
+function remove()
+{
+	v = confirm("Are you sure?");
+	if(v==true)
+	{
+	alert("Ok");
+	}
+	else	
+	{
+	alert("cancel");
+	}
+}
+
+function input()
+{
+	v=prompt("Who are you?");
+	alert("I am" +v);
+}
+
+function open(){
+open("https://rakhavendra.wordpress.com/");
+}
+
+</script>
+</body>
+</html>
