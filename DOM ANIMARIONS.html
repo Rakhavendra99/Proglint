@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+#container{
+width:400px;
+height:400px;
+position:relative;
+background:yellow;
+}
+#animation{
+width:100px;
+height:100px;
+position:absolute;
+background:red;
+}
+</style>
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+</head>
+<body>
+<h1> My First javascript animation</h1>
+<p><button onclick="myMove()">click me</button></p>
+<div id="container">
+<div id="animation">My animation will go here</div>
+</div>
+</body>
+</html>
